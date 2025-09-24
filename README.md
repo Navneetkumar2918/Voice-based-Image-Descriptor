@@ -1,36 +1,15 @@
-# Voice-based-Image-Descriptor
-# 🔍 Hazardous Object Detection with Multilingual Voice Output
+> Why do I have a folder named ".expo" in my project?
 
-This model detects hazardous objects in an image (e.g., knife, scissors, screwdriver) using a trained YOLOv8 model and generates **voice-based warnings** in **multiple Indian languages** including:
+The ".expo" folder is created when an Expo project is started using "expo start" command.
 
-- 🇬🇧 English
-- 🇮🇳 Hindi
-- 🇮🇳 Tamil
-- 🇮🇳 Assamese (text only)
-- 🇮🇳 Bengali
-- 🇮🇳 Telugu
-- 🇮🇳 Malayalam
+> What do the files contain?
 
-> ✨ Built for visually impaired users to hear real-time feedback about dangerous objects in their environment.
->
+- "devices.json": contains information about devices that have recently opened this project. This is used to populate the "Development sessions" list in your development builds.
+- "packager-info.json": contains port numbers and process PIDs that are used to serve the application to the mobile device/simulator.
+- "settings.json": contains the server configuration that is used to serve the application manifest.
 
-## 🚀 Features
+> Should I commit the ".expo" folder?
 
-- 🔍 **YOLOv8-based object detection**
-- 🗣️ **Google Translate + gTTS speech output**
-- 🛡️ Hazard level estimation via object **distance + position**
-- ✅ Modular and runs offline (except translation/TTS)
-- 👩‍🦯 Focused on accessibility for the visually impaired
+No, you should not share the ".expo" folder. It does not contain any information that is relevant for other developers working on the project, it is specific to your machine.
 
-  
-##🛠️ Setup & Usage
-
-1. Install dependencies
-pip install -r requirements.txt
-
-2. Add model weights
-Place your trained YOLOv8 model file as best.pt in the root folder.
-
-3. Run detection and TTS
-python detect_and_caption.py
-
+Upon project creation, the ".expo" folder is already added to your ".gitignore" file.
